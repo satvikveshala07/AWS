@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Flask Application</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #AFEEEE; /* Lighter turquoise background */
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            width: 100%;
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #004d40; /* Darker turquoise for text */
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Text shadow */
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            background-color: #004d40; /* Dark turquoise */
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        a:hover {
+            background-color: #00796b; /* Slightly lighter on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Hover shadow */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome</h1>
+        <a href="{{ url_for('register') }}">Register</a>
+        <a href="{{ url_for('login') }}" style="margin-left: 20px;">Login</a>
+    </div>
+</body>
+</html>
